@@ -126,3 +126,1005 @@ INFO - 2023-06-12 09:25:43 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-06-12 09:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-12 09:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-06-12 09:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 15:36:41 --> mysqli_sql_exception: Table 'ci4_login.data_chart' doesn't exist in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(148): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->history()
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-12 15:36:41 --> Table 'ci4_login.data_chart' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`', [], false)
+ 5 APPPATH\Controllers\User.php(148): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 15:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 15:36:45 --> mysqli_sql_exception: Table 'ci4_login.data_chart' doesn't exist in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(148): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->history()
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-12 15:36:45 --> Table 'ci4_login.data_chart' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`', [], false)
+ 5 APPPATH\Controllers\User.php(148): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 15:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 15:37:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_login', 3306, '', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\AuthenticationBase.php(131): CodeIgniter\BaseModel->find('1')
+#7 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user/history', 'before')
+#11 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#5 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\AuthenticationBase.php(131): CodeIgniter\BaseModel->find('1')
+#6 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user/history', 'before')
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#13 {main}
+CRITICAL - 2023-06-12 15:37:10 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(131): CodeIgniter\BaseModel->find('1')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('user/history', 'before')
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 15:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 15:40:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 16:30:36 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ci4_login', 3306, '', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\AuthenticationBase.php(131): CodeIgniter\BaseModel->find('1')
+#7 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Helpers\auth_helper.php(13): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 C:\xampps\htdocs\e-commerce-main\app\Views\shop\templates\index.php(50): logged_in()
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampps\\htdoc...')
+#11 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\View\View.php(229): CodeIgniter\View\View->render('shop/templates/...', Array, true)
+#13 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Common.php(1184): CodeIgniter\View\View->render('shop/index', Array, true)
+#14 C:\xampps\htdocs\e-commerce-main\app\Controllers\Home.php(12): view('shop/index')
+#15 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#16 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#17 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#19 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#20 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+#5 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\AuthenticationBase.php(131): CodeIgniter\BaseModel->find('1')
+#6 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 C:\xampps\htdocs\e-commerce-main\vendor\myth\auth\src\Helpers\auth_helper.php(13): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 C:\xampps\htdocs\e-commerce-main\app\Views\shop\templates\index.php(50): logged_in()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\View\View.php(213): include('C:\\xampps\\htdoc...')
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\View\View.php(229): CodeIgniter\View\View->render('shop/templates/...', Array, true)
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Common.php(1184): CodeIgniter\View\View->render('shop/index', Array, true)
+#13 C:\xampps\htdocs\e-commerce-main\app\Controllers\Home.php(12): view('shop/index')
+#14 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#15 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#16 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#18 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#19 {main}
+CRITICAL - 2023-06-12 16:30:36 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, '1')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(131): CodeIgniter\BaseModel->find('1')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Helpers\auth_helper.php(13): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 APPPATH\Views\shop\templates\index.php(50): logged_in()
+ 9 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\shop\\templates\\index.php')
+10 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('shop/templates/index', [], true)
+12 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('shop/index', [], true)
+13 APPPATH\Controllers\Home.php(12): view('shop/index')
+14 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 16:30:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:34:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:44:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 16:44:20 --> mysqli_sql_exception: Unknown column 'checkout_date' in 'field list' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkoo...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkoo...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkoo...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkoo...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(152): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->history()
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-12 16:44:20 --> Unknown column 'checkout_date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkoout`.`id`, `users`.`id` as `user_id`, `checkout_date`, `chart_date`
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `users`.`id` = (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkoout`.`id`, `users`.`id` as `user_id`, `checkout_date`, `chart_date`
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `users`.`id` = (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkoout`.`id`, `users`.`id` as `user_id`, `checkout_date`, `chart_date`
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `users`.`id` = (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkoout`.`id`, `users`.`id` as `user_id`, `checkout_date`, `chart_date`
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 APPPATH\Controllers\User.php(152): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 16:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 16:44:50 --> Undefined property: stdClass::$username
+in APPPATH\Views\user\bons.php on line 24.
+ 1 APPPATH\Views\user\bons.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$username', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\user\\bons.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\user\\bons.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/bons', [], true)
+ 5 APPPATH\Controllers\User.php(159): view('user/bons', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 16:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:47:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 16:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:21:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:22:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:23:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:29:32 --> Call to undefined method CodeIgniter\HTTP\Response::streamDownload()
+in APPPATH\Controllers\User.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:29:34 --> Call to undefined method CodeIgniter\HTTP\Response::streamDownload()
+in APPPATH\Controllers\User.php on line 193.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:30:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:30:50 --> Undefined variable $results
+in APPPATH\Views\pdf_template.php on line 12.
+ 1 APPPATH\Views\pdf_template.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:30:52 --> Undefined variable $results
+in APPPATH\Views\pdf_template.php on line 12.
+ 1 APPPATH\Views\pdf_template.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:31:00 --> Undefined variable $results
+in APPPATH\Views\pdf_template.php on line 12.
+ 1 APPPATH\Views\pdf_template.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:31:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:33:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:37:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:39:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:39:51 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php on line 172
+in SYSTEMPATH\Common.php on line 1172.
+ 1 APPPATH\Controllers\User.php(172): view('admin/index', '18')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:44:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:44:49 --> Undefined array key "ids"
+in APPPATH\Views\pdf_template.php on line 14.
+ 1 APPPATH\Views\pdf_template.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ids"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(181): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:45:07 --> Undefined array key "ids"
+in APPPATH\Views\pdf_template.php on line 14.
+ 1 APPPATH\Views\pdf_template.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ids"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(182): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:45:30 --> Undefined array key "id"
+in APPPATH\Views\pdf_template.php on line 14.
+ 1 APPPATH\Views\pdf_template.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(182): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:45:31 --> Undefined array key "id"
+in APPPATH\Views\pdf_template.php on line 14.
+ 1 APPPATH\Views\pdf_template.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(182): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:45:31 --> Undefined array key "id"
+in APPPATH\Views\pdf_template.php on line 14.
+ 1 APPPATH\Views\pdf_template.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(182): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:46:02 --> Undefined array key "id"
+in APPPATH\Views\pdf_template.php on line 14.
+ 1 APPPATH\Views\pdf_template.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(182): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:48:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:54:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:54:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 17:54:52 --> mysqli_sql_exception: Unknown column 'checkoout.ids' in 'where clause' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkoo...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkoo...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkoo...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkoo...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(175): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-12 17:54:52 --> Unknown column 'checkoout.ids' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkoout`.`id` as `ids`, `users`.*, `checkoout`.*, `data_chart`.*
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `checkoout`.`ids` = \'18\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkoout`.`id` as `ids`, `users`.*, `checkoout`.*, `data_chart`.*
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `checkoout`.`ids` = \'18\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkoout`.`id` as `ids`, `users`.*, `checkoout`.*, `data_chart`.*
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `checkoout`.`ids` = \'18\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkoout`.`id` as `ids`, `users`.*, `checkoout`.*, `data_chart`.*
+FROM `users`
+JOIN `checkoout` ON `users`.`id` = `checkoout`.`user_id`
+JOIN `data_chart` ON `checkoout`.`user_id` = `data_chart`.`user_id` AND `checkoout`.`tanggal` = `data_chart`.`date`
+WHERE `checkoout`.`ids` = :checkoout.ids:', [...], false)
+ 5 APPPATH\Controllers\User.php(175): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:56:01 --> Undefined property: stdClass::$name
+in APPPATH\Views\pdf_template.php on line 25.
+ 1 APPPATH\Views\pdf_template.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:56:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:56:59 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 24.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:57:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 17:57:24 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 25.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 17:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 17:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:01:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:01:22 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 41.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:01:31 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 41.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:01:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:01:31 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 41.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:01:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 41.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:01:32 --> Cannot use object of type stdClass as array
+in APPPATH\Views\pdf_template.php on line 41.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 4 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:09:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:09:16 --> Undefined variable $totalHarga
+in APPPATH\Views\pdf_template.php on line 48.
+ 1 APPPATH\Views\pdf_template.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalHarga', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 48)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('18')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:15:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 18:20:24 --> mysqli_sql_exception: Unknown column 'users.id' in 'where clause' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(153): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->history()
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-12 18:20:24 --> Unknown column 'users.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `checkoout`
+WHERE `users`.`id` = (\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `checkoout`
+WHERE `users`.`id` = (\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `checkoout`
+WHERE `users`.`id` = (\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `checkoout`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 APPPATH\Controllers\User.php(153): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:20:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-12 18:20:41 --> mysqli_sql_exception: Unknown column 'users_id' in 'where clause' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(153): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->history()
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-12 18:20:41 --> Unknown column 'users_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `checkoout`
+WHERE `users_id` = (\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `checkoout`
+WHERE `users_id` = (\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `checkoout`
+WHERE `users_id` = (\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `checkoout`
+WHERE `users_id` = :users_id:', [...], false)
+ 5 APPPATH\Controllers\User.php(153): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:21:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:21:02 --> Undefined property: stdClass::$date
+in APPPATH\Views\user\bons.php on line 25.
+ 1 APPPATH\Views\user\bons.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$date', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\user\\bons.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\user\\bons.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/bons', [], true)
+ 5 APPPATH\Controllers\User.php(159): view('user/bons', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:21:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 18:21:54 --> Undefined property: stdClass::$ids
+in APPPATH\Views\user\bons.php on line 27.
+ 1 APPPATH\Views\user\bons.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$ids', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\user\\bons.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\user\\bons.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('user/bons', [], true)
+ 5 APPPATH\Controllers\User.php(159): view('user/bons', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->history()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 18:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:24:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:24:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:34:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:35:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:37:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:37:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:37:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:52:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:59:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 18:59:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 19:00:05 --> Undefined variable $row
+in APPPATH\Views\pdf_template.php on line 50.
+ 1 APPPATH\Views\pdf_template.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('20')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 19:00:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 19:01:04 --> Undefined variable $row
+in APPPATH\Views\pdf_template.php on line 50.
+ 1 APPPATH\Views\pdf_template.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('20')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 19:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:02:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 19:02:42 --> Undefined variable $row
+in APPPATH\Views\pdf_template.php on line 50.
+ 1 APPPATH\Views\pdf_template.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('21')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 19:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 19:02:48 --> Undefined variable $row
+in APPPATH\Views\pdf_template.php on line 50.
+ 1 APPPATH\Views\pdf_template.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('20')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 19:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 19:04:25 --> Undefined variable $row
+in APPPATH\Views\pdf_template.php on line 50.
+ 1 APPPATH\Views\pdf_template.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_template', [], true)
+ 5 APPPATH\Controllers\User.php(178): view('pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->generatePDF('20')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 19:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-12 19:05:32 --> Undefined variable $row
+in APPPATH\Views\pdf_templates.php on line 50.
+ 1 APPPATH\Views\pdf_templates.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_templates.php', 50)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\pdf_templates.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('pdf_templates', [], true)
+ 5 APPPATH\Controllers\Admin.php(273): view('pdf_templates', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->generatePDF('20')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-12 19:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:06:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:10:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:10:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:10:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:13:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:14:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:15:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:15:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:15:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:16:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:17:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-12 19:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

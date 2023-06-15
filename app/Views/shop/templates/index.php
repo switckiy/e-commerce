@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Shoppers &mdash; Colorlib e-Commerce Template</title>
+    <title>Shoppe</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -85,28 +85,12 @@
         <footer class="site-footer border-top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 mb-5 mb-lg-0">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h3 class="footer-heading mb-4">Navigations</h3>
-                            </div>
-                            <div class="col-md-6 col-lg-12">
-                                <ul class="list-unstyled">
-                                    <li><a href="#">Sell online</a></li>
-                                    <li><a href="#">Features</a></li>
-                                    <li><a href="#">Shopping cart</a></li>
-                                    <li><a href="#">Store builder</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-12 mb-8 col-lg-6 mb-lg-0">
                         <div class="block-5 mb-5">
                             <h3 class="footer-heading mb-4">Contact Info</h3>
                             <ul class="list-unstyled">
-                                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
+                                <li class="address"><a href="https://www.google.com/maps/place/Toko+Abi/@-6.8741996,107.5545002,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e43bfad9ce8f:0x1f0531905807305b!8m2!3d-6.8742049!4d107.5570751!16s%2Fg%2F11g6xq7bh6?entry=ttu">Jl. Kec. No.35, RT.03/RW.09, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</a></li>
                                 <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                                <li class="email">emailaddress@domain.com</li>
                             </ul>
                         </div>
 

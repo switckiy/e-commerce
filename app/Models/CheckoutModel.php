@@ -13,8 +13,8 @@ class CheckoutModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['user_id', 'negara', 'alamat', 'kota', 'kode_pos', 'email', 'telp', 'catatan', 'order_total'];
-    
+    protected $allowedFields    = ['user_id', 'negara', 'alamat', 'kota', 'kode_pos', 'email', 'telp', 'catatan', 'order_total', 'stats', 'karyawan'];
+
 
 
     // // Dates

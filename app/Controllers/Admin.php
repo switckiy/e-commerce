@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 use CodeIgniter\Database\MySQLi\Builder;
 use App\Models\ShopModel;
+use App\Models\CheckoutModel;
+use App\Models\KaryawanModel;
+use Dompdf\Dompdf;
 
 
 class Admin extends BaseController
@@ -234,5 +237,82 @@ class Admin extends BaseController
         $data['title'] = 'Shop';
         // Tampilkan view
         return view('admin/about', $data);
+    }
+
+
+    public function history()
+    {
+        $db = \Config\Database::connect(); // Menghubungkan ke database
+
+        $query = $db->table('checkoout')
+            ->select('checkoout.*, users.username')
+            ->join('users', 'users.id = checkoout.user_id')
+            ->get();
+
+        $data['results'] = $query->getResult();
+
+
+        $data['title'] = 'History Shop ';
+        return view('admin/bons', $data);
+    }
+
+    public function generatePDF($user_id)
+    {
+        $db = \Config\Database::connect(); // Menghubungkan ke database
+        $query = $db->table('users')
+            ->join('checkoout', 'users.id = checkoout.user_id')
+            ->join('data_chart', 'checkoout.user_id = data_chart.user_id AND checkoout.tanggal = data_chart.date')
+            ->select('checkoout.id as ids, users.*, checkoout.*, data_chart.*')
+            ->where('checkoout.id', $user_id)
+            ->where('checkoout.tanggal', 'data_chart.date', false) // Compare the dates
+            ->get();
+
+        $data['results'] = $query->getResult();
+
+        // Load view into a variable
+        $html = view('pdf_templates', $data);
+
+        // Initialize Dompdf class
+        $dompdf = new Dompdf();
+        $dompdf->loadHtml($html);
+        $dompdf->setPaper('A4', 'portrait');
+        $dompdf->render();
+        $dompdf->stream('data.pdf', ['Attachment' => false]);
+    }
+    public function status()
+    {
+
+        $model = new KaryawanModel();
+        $data['karyawan'] = $model->getKaryawan();
+        $db = \Config\Database::connect(); // Menghubungkan ke database
+
+        $query = $db->table('checkoout')
+            ->select('checkoout.*, users.username ')
+            ->join('users', 'users.id = checkoout.user_id')
+            ->get();
+
+        $data['results'] = $query->getResult();
+
+
+        $data['title'] = 'Edit Status ';
+        return view('admin/status', $data);
+    }
+
+    public function update($id)
+    {
+        $username = $this->request->getPost('username');
+        $karyawan = $this->request->getPost('karyawan');
+        $stats = $this->request->getPost('stats');
+
+        // Lakukan validasi data jika diperlukan
+
+        // Lakukan pembaruan data di database
+        $model = new CheckoutModel();
+        $model->update($id, [
+            'karyawan' => $karyawan,
+            'stats' => $stats
+        ]);
+
+        return redirect()->to(base_url('admin'))->with('success', 'Data berhasil diperbarui');
     }
 }

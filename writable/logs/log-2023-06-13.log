@@ -1,0 +1,777 @@
+INFO - 2023-06-13 17:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:49:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:49:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:50:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:50:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:51:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 17:52:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:00:12 --> Undefined variable $results
+in APPPATH\Views\admin\status.php on line 24.
+ 1 APPPATH\Views\admin\status.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(301): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:03:04 --> Undefined variable $results
+in APPPATH\Views\admin\status.php on line 24.
+ 1 APPPATH\Views\admin\status.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $results', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 24)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(305): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:03:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 18:07:44 --> mysqli_sql_exception: Table 'ci4_login.karyawans' doesn't exist in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampps\htdocs\e-commerce-main\app\Models\KaryawanModel.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampps\htdocs\e-commerce-main\app\Controllers\Admin.php(299): App\Models\KaryawanModel->getKaryawan()
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#13 {main}
+CRITICAL - 2023-06-13 18:07:45 --> Table 'ci4_login.karyawans' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `karyawans`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `karyawans`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `karyawans`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `karyawans`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KaryawanModel.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin.php(299): App\Models\KaryawanModel->getKaryawan()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 18:07:59 --> mysqli_sql_exception: Table 'ci4_login.karyawans' doesn't exist in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampps\htdocs\e-commerce-main\app\Models\KaryawanModel.php(20): CodeIgniter\BaseModel->findAll()
+#7 C:\xampps\htdocs\e-commerce-main\app\Controllers\Admin.php(299): App\Models\KaryawanModel->getKaryawan()
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#13 {main}
+CRITICAL - 2023-06-13 18:07:59 --> Table 'ci4_login.karyawans' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `karyawans`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `karyawans`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `karyawans`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `karyawans`', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\KaryawanModel.php(20): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin.php(299): App\Models\KaryawanModel->getKaryawan()
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:11:27 --> Undefined variable $karyawan
+in APPPATH\Views\admin\karyawan.php on line 22.
+ 1 APPPATH\Views\admin\karyawan.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $karyawan', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/karyawan', [], true)
+ 5 APPPATH\Controllers\Admin.php(318): view('admin/karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->addkaryawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:12:14 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\karyawan.php on line 25.
+ 1 APPPATH\Views\admin\karyawan.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/karyawan', [], true)
+ 5 APPPATH\Controllers\Admin.php(303): view('admin/karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:12:18 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\karyawan.php on line 25.
+ 1 APPPATH\Views\admin\karyawan.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/karyawan', [], true)
+ 5 APPPATH\Controllers\Admin.php(303): view('admin/karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:12:26 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\karyawan.php on line 25.
+ 1 APPPATH\Views\admin\karyawan.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/karyawan', [], true)
+ 5 APPPATH\Controllers\Admin.php(303): view('admin/karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:12:31 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\karyawan.php on line 25.
+ 1 APPPATH\Views\admin\karyawan.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/karyawan', [], true)
+ 5 APPPATH\Controllers\Admin.php(303): view('admin/karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:12:44 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\karyawan.php on line 25.
+ 1 APPPATH\Views\admin\karyawan.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\karyawan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/karyawan', [], true)
+ 5 APPPATH\Controllers\Admin.php(303): view('admin/karyawan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->karyawan()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:22:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:22:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 18:22:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ci4_login`.`checkoout`, CONSTRAINT `checkoout_ibfk_1` FOREIGN KEY (`karyawan`) REFERENCES `karyawan` (`name`)) in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ch...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(135): CodeIgniter\Model->insert(Array)
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->chekout()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#13 {main}
+CRITICAL - 2023-06-13 18:22:53 --> Cannot add or update a child row: a foreign key constraint fails (`ci4_login`.`checkoout`, CONSTRAINT `checkoout_ibfk_1` FOREIGN KEY (`karyawan`) REFERENCES `karyawan` (`name`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES ((\'6\'), \'bangladesh\', \'a\', \'a\', \'a\', \'a\', \'a\', \'334.500\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES ((\'6\'), \'bangladesh\', \'a\', \'a\', \'a\', \'a\', \'a\', \'334.500\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES ((\'6\'), \'bangladesh\', \'a\', \'a\', \'a\', \'a\', \'a\', \'334.500\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES (:user_id:, :negara:, :alamat:, :kota:, :kode_pos:, :telp:, :catatan:, :order_total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\User.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:23:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:23:55 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Controllers\User.php(105): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:24:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 18:25:48 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ci4_login`.`checkoout`, CONSTRAINT `checkoout_ibfk_1` FOREIGN KEY (`karyawan`) REFERENCES `karyawan` (`name`)) in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ch...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ch...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ch...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ch...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(135): CodeIgniter\Model->insert(Array)
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->chekout()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#13 {main}
+CRITICAL - 2023-06-13 18:25:48 --> Cannot add or update a child row: a foreign key constraint fails (`ci4_login`.`checkoout`, CONSTRAINT `checkoout_ibfk_1` FOREIGN KEY (`karyawan`) REFERENCES `karyawan` (`name`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES ((\'6\'), \'bangladesh\', \'a\', \'a\', \'a\', \'a\', \'a\', \'334.500\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES ((\'6\'), \'bangladesh\', \'a\', \'a\', \'a\', \'a\', \'a\', \'334.500\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES ((\'6\'), \'bangladesh\', \'a\', \'a\', \'a\', \'a\', \'a\', \'334.500\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `checkoout` (`user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`) VALUES (:user_id:, :negara:, :alamat:, :kota:, :kode_pos:, :telp:, :catatan:, :order_total:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\User.php(135): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:26:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:26:39 --> insertBatch() has no data.
+in SYSTEMPATH\Database\BaseBuilder.php on line 1772.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 2 APPPATH\Controllers\User.php(105): CodeIgniter\Database\BaseBuilder->insertBatch([])
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:26:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:28:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:30:44 --> Undefined variable $user
+in APPPATH\Views\admin\status.php on line 31.
+ 1 APPPATH\Views\admin\status.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(293): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:31:23 --> Cannot use object of type stdClass as array
+in APPPATH\Views\admin\status.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 4 APPPATH\Controllers\Admin.php(293): view('admin/status', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:35:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 18:36:45 --> mysqli_sql_exception: Unknown column 'karyawan.name' in 'field list' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkoo...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkoo...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkoo...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkoo...', Array, false)
+#4 C:\xampps\htdocs\e-commerce-main\app\Controllers\Admin.php(289): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\Admin->status()
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#10 {main}
+CRITICAL - 2023-06-13 18:36:45 --> Unknown column 'karyawan.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `checkoout`.*, `users`.`username`, `karyawan`.`name`
+FROM `checkoout`
+JOIN `users` ON `users`.`id` = `checkoout`.`user_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `checkoout`.*, `users`.`username`, `karyawan`.`name`
+FROM `checkoout`
+JOIN `users` ON `users`.`id` = `checkoout`.`user_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `checkoout`.*, `users`.`username`, `karyawan`.`name`
+FROM `checkoout`
+JOIN `users` ON `users`.`id` = `checkoout`.`user_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `checkoout`.*, `users`.`username`, `karyawan`.`name`
+FROM `checkoout`
+JOIN `users` ON `users`.`id` = `checkoout`.`user_id`', [], false)
+ 5 APPPATH\Controllers\Admin.php(289): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:37:39 --> Call to undefined method App\Models\KaryawanModel::getResult
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Models\KaryawanModel.php(20): CodeIgniter\Model->__call('getResult', [])
+ 2 APPPATH\Controllers\Admin.php(294): App\Models\KaryawanModel->getKaryawan()
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:38:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:38:24 --> Undefined array key "name"
+in APPPATH\Views\admin\status.php on line 29.
+ 1 APPPATH\Views\admin\status.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(296): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:38:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:38:35 --> Attempt to read property "name" on array
+in APPPATH\Views\admin\status.php on line 29.
+ 1 APPPATH\Views\admin\status.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "name" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(296): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:39:11 --> Attempt to read property "username" on array
+in APPPATH\Views\admin\status.php on line 28.
+ 1 APPPATH\Views\admin\status.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "username" on array', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(296): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 18:39:37 --> Undefined property: stdClass::$name
+in APPPATH\Views\admin\status.php on line 29.
+ 1 APPPATH\Views\admin\status.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\admin\\status.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/status', [], true)
+ 5 APPPATH\Controllers\Admin.php(296): view('admin/status', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->status()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 18:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:48:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:49:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 18:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 19:00:26 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\User.php on line 35.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->updateProfile()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 19:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 19:06:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ProfileModel.php(22): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\User.php(39): App\Models\ProfileModel->updateProfile('1', 'admin', Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->updateProfile()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 19:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:09:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:09:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 19:09:22 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ProfileModel.php(22): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\User.php(39): App\Models\ProfileModel->updateProfile('1', 'admins', Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->updateProfile()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 19:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:10:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 19:10:51 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Models\ProfileModel.php(22): CodeIgniter\Model->update()
+ 4 APPPATH\Controllers\User.php(39): App\Models\ProfileModel->updateProfile('1', 'admin', Object(CodeIgniter\HTTP\Files\UploadedFile))
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->updateProfile()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 19:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:18:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:20:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:21:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:21:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:22:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:35:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:37:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:39:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:41:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:43:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:46:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:47:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:49:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:49:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:50:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:50:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:56:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 19:56:24 --> Cannot access offset of type string on string
+in APPPATH\Controllers\User.php on line 191.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 19:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:57:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 19:57:21 --> Cannot access offset of type string on string
+in APPPATH\Controllers\User.php on line 191.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 19:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 19:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:05:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:05:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:07:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 20:08:00 --> mysqli_sql_exception: Unknown column 'product_id' in 'field list' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(159): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->chekout()
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#11 {main}
+CRITICAL - 2023-06-13 20:08:00 --> Unknown column 'product_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Controllers\User.php(159): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 20:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 20:10:20 --> mysqli_sql_exception: Unknown column 'product_id' in 'field list' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(159): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->chekout()
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#11 {main}
+CRITICAL - 2023-06-13 20:10:20 --> Unknown column 'product_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Controllers\User.php(159): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 20:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-13 20:11:05 --> mysqli_sql_exception: Unknown column 'product_id' in 'field list' in C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', NULL, false)
+#4 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\xampps\htdocs\e-commerce-main\app\Controllers\User.php(159): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\User->chekout()
+#7 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampps\htdocs\e-commerce-main\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\xampps\htdocs\e-commerce-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdoc...')
+#11 {main}
+CRITICAL - 2023-06-13 20:11:05 --> Unknown column 'product_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_chart` (`images`, `name_product`, `price`, `product_id`, `quantity`, `total`, `user_id`)
+VALUES (\'1686017940_09dd961df0c417390188.webp\',\'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg\',\'101.602\',\'22\',\'1\',\'101.602\',\'6\')', null, false)
+ 5 SYSTEMPATH\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+ 6 APPPATH\Controllers\User.php(159): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\User->chekout()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 20:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:16:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-13 20:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-13 20:18:08 --> Undefined variable $products
+in APPPATH\Views\shop\index.php on line 63.
+ 1 APPPATH\Views\shop\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\shop\\index.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\xampps\\htdocs\\e-commerce-main\\app\\Views\\shop\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('shop/index', [], true)
+ 5 APPPATH\Controllers\Home.php(12): view('shop/index')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampps\\htdocs\\e-commerce-main\\public\\index.php')
+INFO - 2023-06-13 20:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -51,18 +51,9 @@
             </div>
             <div class="col-md-5 ml-auto">
                 <div class="p-4 border mb-3">
-                    <span class="d-block text-primary h6 text-uppercase">New York</span>
-                    <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    <span class="d-block text-primary h6 text-uppercase">Toko Abi</span>
+                    <p class="mb-0"><a href="https://www.google.com/maps/place/Toko+Abi/@-6.8741996,107.5545002,17z/data=!3m1!4b1!4m6!3m5!1s0x2e68e43bfad9ce8f:0x1f0531905807305b!8m2!3d-6.8742049!4d107.5570751!16s%2Fg%2F11g6xq7bh6?entry=ttu">Jl. Kec. No.35, RT.03/RW.09, Cibabat, Kec. Cimahi Utara, Kota Cimahi, Jawa Barat 40513</a></p>
                 </div>
-                <div class="p-4 border mb-3">
-                    <span class="d-block text-primary h6 text-uppercase">London</span>
-                    <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
-                </div>
-                <div class="p-4 border mb-3">
-                    <span class="d-block text-primary h6 text-uppercase">Canada</span>
-                    <p class="mb-0">203 Fake St. Mountain View, San Francisco, California, USA</p>
-                </div>
-
             </div>
         </div>
     </div>

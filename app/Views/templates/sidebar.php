@@ -1,11 +1,11 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-            <i class="fas fa-laugh-wink"></i>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('/'); ?>">
+        <div class="sidebar-brand-icon ">
+            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">Toko Abi</div>
     </a>
 
 
@@ -42,9 +42,33 @@
         <!-- Nav Item - About Edit -->
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('admin/about'); ?>">
-                <i class="fas fa-solid fa-gauge-high fa-beat-fade"></i>
+                <i class="fas fa-sharp fa-regular fa-circle-info"></i>
                 <span>About Edit</span></a>
         </li>
+
+        <!-- Nav Item - Edit status -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('admin/status'); ?>">
+                <i class="fas fa-solid fa-book-open-reader"></i>
+                <span>Edit status</span></a>
+        </li>
+
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Karyawan Management
+        </div>
+
+        <!-- Divider -->
+
+        <!-- Nav Item - Edit status -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('Karyawans'); ?>">
+                <i class="fas fa-solid fa-book-open-reader"></i>
+                <span>Karyawan</span></a>
+        </li>
+
     <?php endif; ?>
 
     <!-- Divider -->
@@ -70,11 +94,15 @@
     </li>
     <!-- Nav Item - History Cekout -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('user/history'); ?>">
-            <i class="fas fa-solid fa-user-pen fa-beat-fade"></i>
-            <span>History Cekout</span></a>
+        <?php if (in_groups('admin')) : ?>
+            <a class="nav-link" href="<?= base_url('admin/history'); ?>">
+            <?php else : ?>
+                <a class="nav-link" href="<?= base_url('user/history'); ?>">
+                <?php endif; ?>
+                <i class="fas fa-sharp fa-light fa-scroll"></i>
+                <span>History Cekout</span>
+                </a>
     </li>
-
     <!-- Divider -->
     <hr class="sidebar-divider">
 

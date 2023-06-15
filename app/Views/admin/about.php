@@ -34,6 +34,35 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
+            <script>
+                // Get the file input element
+                const fileInput = document.getElementById('images   ');
+
+                // Add event listener for file selection
+                fileInput.addEventListener('change', function(event) {
+                    // Get the selected file name
+                    const fileName = event.target.files[0].name;
+
+                    // Update the label with the selected file name
+                    const label = document.querySelector('.custom-file-label');
+                    label.textContent = fileName;
+                });
+
+
+                function formatDecimal(input) {
+                    // Menghapus karakter non-digit kecuali titik desimal
+                    let value = input.value.replace(/[^\d.]/g, '');
+
+                    // Memastikan hanya ada satu titik desimal
+                    const decimalCount = value.split('.').length - 1;
+                    if (decimalCount > 1) {
+                        value = value.slice(0, value.lastIndexOf('.'));
+                    }
+
+                    // Memperbarui nilai input dengan format desimal
+                    input.value = value;
+                }
+            </script>
         </div>
     </div>
 </div>

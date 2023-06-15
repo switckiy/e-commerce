@@ -9,7 +9,10 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('shop/index');
+        $productModel = new ShopModel();
+        $data['products'] = $productModel->findAll();
+
+        return view('shop/index', $data);
     }
     public function contact()
     {
@@ -66,29 +69,43 @@ class Home extends BaseController
     public function chart()
     {
         $user = array(user_id());
+
         $chartModel = new ChartModel();
+
         $chartData = $chartModel->like('user_id', implode(" ", $user));
+
         $data['products'] = $chartData->findAll();
+
         $result = $chartModel->where('user_id', $user)->select('sum(total) as total_price')->first();
+
         $data['total_price'] = $result['total_price'];
+
         $data['user_id'] = $user;
+
         return view('shop/chart', $data);
     }
 
     public function checkout()
     {
         $user = array(user_id());
+
         $chartModel = new ChartModel();
+
         $chartData = $chartModel->like('user_id', implode(" ", $user));
+
         $data['products'] = $chartData->findAll();
+
         $result = $chartModel->where('user_id', $user)->select('sum(total) as total_price')->first();
+
         $data['total_price'] = $result['total_price'];
+
         $data['user_id'] = $user;
+
         return view('shop/checkout', $data);
     }
+
     public function thankyou()
     {
         return view('shop/thankyou');
     }
-
 }
