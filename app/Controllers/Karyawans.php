@@ -60,6 +60,14 @@ class Karyawans extends BaseController
         return redirect()->to('/karyawans');
     }
 
+
+
+
+
+
+
+
+    // Masih dalam Develop yah !!
     public function data()
     {
         $db = db_connect();

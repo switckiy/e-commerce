@@ -24,9 +24,10 @@
                             <th scope="row"><?= $i++; ?></th>
                             <td><?= $user->username; ?></td>
                             <td><?= $user->email; ?></td>
-                            <td><?= $user->name; ?></td>
+                            <td><?= $user->roles; ?></td>
                             <td>
                                 <a href="<?= base_url('admin/' . $user->userid); ?>" class="btn btn-info">Details</a>
+                                <a href="<?= base_url('admin/roleuser/' . $user->userid); ?>" class="btn btn-warning">Edit</a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

@@ -6,6 +6,7 @@ use CodeIgniter\Database\MySQLi\Builder;
 use App\Models\ShopModel;
 use App\Models\CheckoutModel;
 use App\Models\KaryawanModel;
+
 use Dompdf\Dompdf;
 
 
@@ -45,9 +46,11 @@ class Admin extends BaseController
 
 
 
-        $this->builder->select('users.id as userid, username, email, name');
+        $this->builder->select('users.id as userid, username, email, GROUP_CONCAT(auth_groups.name) as roles');
         $this->builder->join('auth_groups_users', 'auth_groups_users.user_id = users.id');
         $this->builder->join('auth_groups', 'auth_groups.id = auth_groups_users.group_id');
+        $this->builder->groupBy('users.id');
+        $this->builder->where('users.id !=', 1); // Exclude data with ID 1
         $query = $this->builder->get();
 
         $data['users'] = $query->getResult();
@@ -55,6 +58,61 @@ class Admin extends BaseController
 
         return view('admin/listuser', $data);
     }
+
+
+    public function roleuser($id = 0)
+    {
+        $data['title'] = 'role List';
+        // $users = new \Myth\Auth\Models\UserModel();
+        // $data['users'] = $users->findAll();
+
+        $db = \Config\Database::connect();
+
+        $query = $db->table('auth_groups');
+        $query->select('name , id');
+        $query->where('id !=', 1); // Exclude data with ID 1
+        $data['datas'] = $query->get()->getResult();
+
+        $query2 = $db->table('auth_groups_users');
+        $query2->select('group_id , user_id');
+        $query2->where('user_id', $id); // Filter the results by user_id
+        $data['role'] = $query2->get()->getResult();
+
+        $data['userid'] = $id; // Include the userid in the data array
+
+
+
+        return view('admin/roleuser', $data);
+    }
+
+    public function updateRole($userId = null)
+    {
+        if ($this->request->isAJAX() && $userId) {
+            $requestData = $this->request->getJSON(true);
+
+            $roleId = $requestData['roleId'];
+            $isChecked = $requestData['isChecked'];
+
+            // Save the role data to the database
+            $db = db_connect();
+
+            $data = [
+                'user_id' => $userId,
+                'group_id' => $roleId
+            ];
+
+            if ($isChecked) {
+                $db->table('auth_groups_users')->insert($data);
+            } else {
+                $db->table('auth_groups_users')->where($data)->delete();
+            }
+
+            return $this->response->setJSON(['status' => 'success']);
+        }
+
+        return $this->response->setJSON(['status' => 'error']);
+    }
+
 
     public function detail($id = 0)
     {
@@ -69,7 +127,7 @@ class Admin extends BaseController
 
         $data['user'] = $query->getRow();
         if (empty($data['user'])) {
-            return redirect()->to('/admin');
+            return redirect()->to('/admin/detail');
         }
 
         return view('admin/detail', $data);
@@ -303,6 +361,7 @@ class Admin extends BaseController
         $username = $this->request->getPost('username');
         $karyawan = $this->request->getPost('karyawan');
         $stats = $this->request->getPost('stats');
+        $ongkos = $this->request->getPost('ongkos');
 
         // Lakukan validasi data jika diperlukan
 
@@ -310,9 +369,10 @@ class Admin extends BaseController
         $model = new CheckoutModel();
         $model->update($id, [
             'karyawan' => $karyawan,
-            'stats' => $stats
+            'stats' => $stats,
+            'ongkos' => $ongkos
         ]);
 
-        return redirect()->to(base_url('admin'))->with('success', 'Data berhasil diperbarui');
+        return redirect()->to(base_url('admin/status'))->with('success', 'Data berhasil diperbarui');
     }
 }

@@ -17,6 +17,7 @@
                         <th scope="col">Username</th>
                         <th scope="col">Karyawan</th>
                         <th scope="col">Status</th>
+                        <th scope="col">Ongkir</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
@@ -28,6 +29,7 @@
                             <td><?= $dats->username; ?></td>
                             <td><?= $dats->karyawan; ?></td>
                             <td><?= $dats->stats; ?></td>
+                            <td><?= $dats->ongkos; ?></td>
                             <td>
                                 <button class="btn btn-primary" data-toggle="modal" data-target="#editModal<?= $dats->id; ?>">Edit</button>
                             </td>
@@ -55,7 +57,6 @@
                                                     <?php endforeach; ?>
                                                 </select>
                                             </div>
-
                                             <div class="form-group">
                                                 <label for="stats">Status</label>
                                                 <select class="form-control" id="stats" name="stats" required>
@@ -64,7 +65,10 @@
                                                     <option value="Selesai" <?= $dats->stats == 'Selesai' ? 'selected' : ''; ?>>Selesai</option>
                                                 </select>
                                             </div>
-
+                                            <div class="form-group">
+                                                <label for="stats">Ongkos Kirim</label>
+                                                <input type="text" class="form-control" id="ongkos" name="ongkos" placeholder="<?= $dats->ongkos; ?>" oninput="formatDecimal(this)" required>
+                                            </div>
                                             <button type="submit" class="btn btn-primary">Update</button>
                                         </form>
                                     </div>
@@ -81,6 +85,20 @@
 
 
 </div>
+<script>
+    function formatDecimal(input) {
+        // Menghapus karakter non-digit kecuali titik desimal
+        let value = input.value.replace(/[^\d.]/g, '');
 
+        // Memastikan hanya ada satu titik desimal
+        const decimalCount = value.split('.').length - 1;
+        if (decimalCount > 1) {
+            value = value.slice(0, value.lastIndexOf('.'));
+        }
+
+        // Memperbarui nilai input dengan format desimal
+        input.value = value;
+    }
+</script>
 <!-- End New Modal -->
 <?= $this->endSection(); ?>

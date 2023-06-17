@@ -34,9 +34,8 @@ class Home extends BaseController
     }
     public function detile($id)
     {
-        $productModel = new ShopModel();
         // Create an instance of the product model
-
+        $productModel = new ShopModel();
 
         // Fetch the product data from the model based on the $id
         $productData = $productModel->find($id);
@@ -69,17 +68,11 @@ class Home extends BaseController
     public function chart()
     {
         $user = array(user_id());
-
         $chartModel = new ChartModel();
-
         $chartData = $chartModel->like('user_id', implode(" ", $user));
-
         $data['products'] = $chartData->findAll();
-
         $result = $chartModel->where('user_id', $user)->select('sum(total) as total_price')->first();
-
         $data['total_price'] = $result['total_price'];
-
         $data['user_id'] = $user;
 
         return view('shop/chart', $data);
@@ -88,17 +81,11 @@ class Home extends BaseController
     public function checkout()
     {
         $user = array(user_id());
-
         $chartModel = new ChartModel();
-
         $chartData = $chartModel->like('user_id', implode(" ", $user));
-
         $data['products'] = $chartData->findAll();
-
         $result = $chartModel->where('user_id', $user)->select('sum(total) as total_price')->first();
-
         $data['total_price'] = $result['total_price'];
-
         $data['user_id'] = $user;
 
         return view('shop/checkout', $data);

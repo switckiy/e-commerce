@@ -75,8 +75,6 @@ class User extends BaseController
         return redirect()->to('user/edit');
     }
 
-
-
     public function addToChart()
     {
         $user = array(user_id());

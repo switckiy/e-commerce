@@ -13,7 +13,7 @@ class ProfileModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['username', 'user_image'];
+    protected $allowedFields    = ['username', 'user_image', 'id'];
 
 
 

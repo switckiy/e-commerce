@@ -75,12 +75,19 @@
                       <?php endforeach; ?>
                       <tr>
                         <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
+                        <td></td>
                         <td class="text-black">Rp<?= $total_price; ?></td>
                       </tr>
                       <tr>
                         <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                        <td></td>
                         <td class="text-black font-weight-bold"><strong>Rp<?= $total_price; ?></strong></td>
                         <input type="hidden" name="total" value="<?= $total_price; ?>">
+                      </tr>
+                      <tr>
+                        <td class="text-black">Note : tidak termasuk ongkir</td>
+                        <td></td>
+                        <td></td>
                       </tr>
                   </tbody>
                 </table>
