@@ -4,11 +4,26 @@ namespace App\Controllers;
 
 use App\Models\ShopModel;
 use App\Models\ChartModel;
+use Config\Services;
+use Config\Custom;
+
 
 class Home extends BaseController
 {
     public function index()
     {
+
+
+        $config = new Custom();
+        $expirationDate = $config->expirationDate; // Get the expiration date from the configuration file
+        $currentDate = date('Y-m-d'); // Get the current date
+
+        if ($currentDate >= $expirationDate) {
+
+            return view('blank'); // Redirect to a blank or expired page
+        }
+
+
         $productModel = new ShopModel();
         $data['products'] = $productModel->findAll();
 
