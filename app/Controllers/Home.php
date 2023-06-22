@@ -20,7 +20,7 @@ class Home extends BaseController
 
         if ($currentDate >= $expirationDate) {
 
-            return view('blank'); // Redirect to a blank or expired page
+            return view('welcome_message'); // Redirect to a blank or expired page
         }
 
 
