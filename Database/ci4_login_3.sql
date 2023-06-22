@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2023 at 05:43 PM
+-- Generation Time: Jun 22, 2023 at 06:08 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -41,7 +41,7 @@ CREATE TABLE `about` (
 --
 
 INSERT INTO `about` (`id`, `images`, `title`, `deskripsi`) VALUES
-(1, '1686560099_26946256b094e98f5aeb.jpeg', 'tes1', 'TES1');
+(1, '1686685740_c968fe2973c6e97d63a6.png', 'tes1', 'TES1');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,8 @@ CREATE TABLE `auth_groups` (
 
 INSERT INTO `auth_groups` (`id`, `name`, `description`) VALUES
 (1, 'admin', 'Site Administrator'),
-(2, 'user', 'Regular User');
+(2, 'user', 'Regular User'),
+(4, 'member', 'Membership');
 
 -- --------------------------------------------------------
 
@@ -96,7 +97,8 @@ INSERT INTO `auth_groups_permissions` (`group_id`, `permission_id`) VALUES
 (1, 1),
 (1, 2),
 (1, 3),
-(2, 2);
+(2, 2),
+(4, 2);
 
 -- --------------------------------------------------------
 
@@ -115,7 +117,9 @@ CREATE TABLE `auth_groups_users` (
 
 INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES
 (1, 1),
-(2, 6);
+(2, 6),
+(2, 7),
+(4, 6);
 
 -- --------------------------------------------------------
 
@@ -235,7 +239,30 @@ INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `succ
 (96, '::1', 'ezarr699@gmail.com', 1, '2023-06-12 08:46:36', 1),
 (97, '::1', 'ezarr699@gmail.com', 1, '2023-06-12 09:09:01', 1),
 (98, '::1', 'nagasaya221@gmail.com', 6, '2023-06-12 09:09:23', 1),
-(99, '::1', 'ezarr699@gmail.com', 1, '2023-06-12 09:25:39', 1);
+(99, '::1', 'ezarr699@gmail.com', 1, '2023-06-12 09:25:39', 1),
+(100, '::1', 'nagasaya221@gmail.com', 6, '2023-06-12 18:12:32', 1),
+(101, '::1', 'ezarr699@gmail.com', 1, '2023-06-12 18:39:48', 1),
+(102, '::1', 'nagasaya221@gmail.com', 6, '2023-06-12 18:58:51', 1),
+(103, '::1', 'ezarr699@gmail.com', 1, '2023-06-12 18:59:06', 1),
+(104, '::1', 'ezarr699@gmail.com', 1, '2023-06-13 17:49:47', 1),
+(105, '::1', 'nagasaya221@gmail.com', 6, '2023-06-13 18:14:19', 1),
+(106, '::1', 'ezarr699@gmail.com', 1, '2023-06-13 18:27:37', 1),
+(107, '::1', 'nagasaya221@gmail.com', 6, '2023-06-13 19:56:03', 1),
+(108, '::1', 'ezarr699@gmail.com', 1, '2023-06-15 08:40:33', 1),
+(109, '::1', 'nagasaya221@gmail.com', 6, '2023-06-15 08:43:15', 1),
+(110, '::1', 'ezarr699@gmail.com', 1, '2023-06-15 08:49:37', 1),
+(111, '::1', 'nagasaya221@gmail.com', 6, '2023-06-15 08:52:30', 1),
+(112, '::1', 'ezarr699@gmail.com', 1, '2023-06-15 09:08:43', 1),
+(113, '::1', 'devarahmat57@smk.belajar.id', 7, '2023-06-15 09:10:25', 1),
+(114, '::1', 'ezarr699@gmail.com', 1, '2023-06-15 09:17:29', 1),
+(115, '::1', 'ezarr699@gmail.com', 1, '2023-06-15 09:22:48', 1),
+(116, '::1', 'ezarr699@gmail.com', 1, '2023-06-15 16:11:32', 1),
+(117, '::1', 'nagasaya221@gmail.com', 6, '2023-06-16 07:58:59', 1),
+(118, '::1', 'nagasaya221@gmail.com', 6, '2023-06-16 08:44:56', 1),
+(119, '::1', 'ezarr699@gmail.com', 1, '2023-06-16 09:09:40', 1),
+(120, '::1', 'ezarr699@gmail.com', 1, '2023-06-17 15:53:27', 1),
+(121, '::1', 'ezarr699@gmail.com', 1, '2023-06-17 17:58:14', 1),
+(122, '::1', 'ezarr699@gmail.com', 1, '2023-06-22 15:23:22', 1);
 
 -- --------------------------------------------------------
 
@@ -315,6 +342,13 @@ CREATE TABLE `chart` (
   `total` decimal(10,3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `chart`
+--
+
+INSERT INTO `chart` (`id`, `product_id`, `user_id`, `name_product`, `images`, `quantity`, `price`, `total`) VALUES
+(69, 23, 6, 'Nestlé NANKID 3 pHPro Plain Susu Anak 1-3 Tahun Kaleng 800g', '1686018474_858027828468db2055ce.jpg', 1, 332.000, 332.000);
+
 -- --------------------------------------------------------
 
 --
@@ -331,18 +365,19 @@ CREATE TABLE `checkoout` (
   `telp` varchar(255) NOT NULL,
   `catatan` text NOT NULL,
   `order_total` decimal(10,3) NOT NULL,
-  `stats` varchar(255) NOT NULL,
-  `karyawan` varchar(255) NOT NULL,
-  `tanggal` date NOT NULL DEFAULT current_timestamp()
+  `stats` varchar(255) NOT NULL DEFAULT 'Sedang diproses',
+  `karyawan` varchar(255) NOT NULL DEFAULT '-',
+  `tanggal` datetime NOT NULL DEFAULT current_timestamp(),
+  `ongkos` decimal(10,3) NOT NULL DEFAULT 1.000
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `checkoout`
 --
 
-INSERT INTO `checkoout` (`id`, `user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`, `stats`, `karyawan`, `tanggal`) VALUES
-(17, 6, 'Algeria', 'SAAS', '21', '321', '321', '321', 334.500, '', '', '2023-06-12'),
-(18, 1, 'bangladesh', 'a', 'a', 'a', 'a', 'a', 334.500, '', '', '2023-06-12');
+INSERT INTO `checkoout` (`id`, `user_id`, `negara`, `alamat`, `kota`, `kode_pos`, `telp`, `catatan`, `order_total`, `stats`, `karyawan`, `tanggal`, `ongkos`) VALUES
+(29, 6, 'bangladesh', 'a', 'a', 'a', 'a', 'a', 101.602, 'Sedang Di Antar', 'Services', '2023-06-15 15:45:23', 10.240),
+(30, 7, 'bangladesh', 'a', 'a', 'a', 'a', 'a', 1003.500, 'Sedang Diproses', 'Services', '2023-06-15 16:16:55', 0.000);
 
 -- --------------------------------------------------------
 
@@ -358,7 +393,7 @@ CREATE TABLE `data_chart` (
   `quantity` int(11) NOT NULL,
   `price` decimal(10,3) NOT NULL,
   `total` decimal(10,3) NOT NULL,
-  `date` date NOT NULL DEFAULT current_timestamp()
+  `date` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -366,8 +401,26 @@ CREATE TABLE `data_chart` (
 --
 
 INSERT INTO `data_chart` (`id`, `user_id`, `name_product`, `images`, `quantity`, `price`, `total`, `date`) VALUES
-(11, 6, 'Nestlé NANKID 3 pHPro Plain Susu Anak 1-3 Tahun Kaleng 800g', '1686018474_858027828468db2055ce.jpg', 1, 334.500, 334.500, '2023-06-12'),
-(12, 1, 'Nestlé NANKID 3 pHPro Plain Susu Anak 1-3 Tahun Kaleng 800g', '1686018474_858027828468db2055ce.jpg', 1, 334.500, 334.500, '2023-06-12');
+(26, 6, 'Nestlé DANCOW 3+ Madu Susu Anak 3-5 Tahun Box 1Kg', '1686017940_09dd961df0c417390188.webp', 1, 101.602, 101.602, '2023-06-15 15:45:23'),
+(28, 7, 'Nestlé NANKID 3 pHPro Plain Susu Anak 1-3 Tahun Kaleng 800g', '1686018474_858027828468db2055ce.jpg', 3, 334.500, 1003.500, '2023-06-15 16:16:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `karyawan`
+--
+
+CREATE TABLE `karyawan` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `karyawan`
+--
+
+INSERT INTO `karyawan` (`id`, `name`) VALUES
+(1, 'Services');
 
 -- --------------------------------------------------------
 
@@ -447,8 +500,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `username`, `fullname`, `user_image`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'ezarr699@gmail.com', 'admin', NULL, 'default.svg', '$2y$10$gcO4sibpGwHh/PchUvzVh.xtT83WBF9XnvGuGJ7Kkn13nEi9VENHm', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-05-27 17:30:23', '2023-05-27 17:30:23', NULL),
-(6, 'nagasaya221@gmail.com', 'test', NULL, 'default.svg', '$2y$10$zEQClE9Mj5yM.FXb4zIave4JseRy5IXO0RCUXBWzqab37tKjmRLzm', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-05-27 18:10:04', '2023-05-27 18:10:04', NULL);
+(1, 'ezarr699@gmail.com', 'admin', NULL, '1686685688_ff269e2c75e666b84671.png', '$2y$10$gcO4sibpGwHh/PchUvzVh.xtT83WBF9XnvGuGJ7Kkn13nEi9VENHm', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-05-27 17:30:23', '2023-05-27 17:30:23', NULL),
+(6, 'nagasaya221@gmail.com', 'test', NULL, 'default.svg', '$2y$10$zEQClE9Mj5yM.FXb4zIave4JseRy5IXO0RCUXBWzqab37tKjmRLzm', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-05-27 18:10:04', '2023-05-27 18:10:04', NULL),
+(7, 'devarahmat57@smk.belajar.id', 'tes2', NULL, 'default.svg', '$2y$10$JYbl9g3ef0lZ6DI9jbAKU.VWdbwKVELRs.lSHhuPf6DG/3Owlundu', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2023-06-15 09:09:29', '2023-06-15 09:09:29', NULL);
 
 --
 -- Indexes for dumped tables
@@ -540,6 +594,12 @@ ALTER TABLE `data_chart`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `karyawan`
+--
+ALTER TABLE `karyawan`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `migrations`
 --
 ALTER TABLE `migrations`
@@ -579,13 +639,13 @@ ALTER TABLE `auth_activation_attempts`
 -- AUTO_INCREMENT for table `auth_groups`
 --
 ALTER TABLE `auth_groups`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 
 --
 -- AUTO_INCREMENT for table `auth_permissions`
@@ -609,19 +669,25 @@ ALTER TABLE `auth_tokens`
 -- AUTO_INCREMENT for table `chart`
 --
 ALTER TABLE `chart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
 -- AUTO_INCREMENT for table `checkoout`
 --
 ALTER TABLE `checkoout`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `data_chart`
 --
 ALTER TABLE `data_chart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+
+--
+-- AUTO_INCREMENT for table `karyawan`
+--
+ALTER TABLE `karyawan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `migrations`
@@ -639,7 +705,7 @@ ALTER TABLE `shop`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables
