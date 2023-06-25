@@ -152,7 +152,7 @@ class User extends BaseController
         $chartModel = new ChartModel();
         $checkoutModel = new CheckoutModel();
         $user = user_id();
-        $data = $chartModel->where('user_id', $user)->select(' name_product, images, quantity, price, total')->findAll();
+        $data = $chartModel->where('user_id', $user)->select('user_id, name_product, images, quantity, price, total')->findAll();
         $result = $builder->insertBatch($data);
 
 
@@ -233,7 +233,7 @@ class User extends BaseController
             ->get();
 
         $data['results'] = $query->getResult();
-
+        $data['allData'] = $query->getRowArray();
         // Load view into a variable
         $html = view('pdf_template', $data);
 

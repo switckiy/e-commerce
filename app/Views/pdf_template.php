@@ -62,10 +62,8 @@
     <div class="header">
         <p><strong>Nota Pembayaran</strong></p>
         <div class="header-info">
-            <?php foreach ($results as $row) : ?>
-                <p><strong>Nama:</strong> <?= $row->name; ?></p>
-                <p><strong>Tanggal:</strong> <?= $row->date; ?></p>
-            <?php endforeach; ?>
+            <p><strong>Nama:</strong> <?= $allData['name']; ?></p>
+            <p><strong>Tanggal:</strong> <?= $allData['date']; ?></p>
         </div>
     </div>
     <br>
@@ -73,8 +71,8 @@
         <thead>
             <tr>
                 <th>Produk</th>
-                <th>Harga</th>
                 <th>Quantity</th>
+                <th>Harga</th>
                 <th>Total</th>
             </tr>
         </thead>
@@ -89,14 +87,12 @@
             <?php endforeach; ?>
         </tbody>
     </table>
-    <?php foreach ($results as $row) : ?>
-        <p><strong>Total Pembayaran: </strong> Rp <?= $row->order_total; ?></p>
-        <p><strong>Status: </strong><?= $row->stats; ?></p>
+    <p><strong>Total Pembayaran: </strong> Rp <?= $allData['order_total']; ?></p>
+    <p><strong>Status: </strong><?= $allData['stats']; ?></p>
 
-        <div class="footer">
-            <p>Alamat: Jalan Contoh No. 123, Kota Contoh, <?= $row->negara; ?></p>
-        </div>
-    <?php endforeach; ?>
+    <div class="footer">
+        <p>Alamat: <?= $allData['catatan']; ?></p>
+    </div>
 </body>
 
 </html>

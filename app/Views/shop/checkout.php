@@ -23,7 +23,7 @@
 
             <div class="form-group row">
               <div class="col-md-6">
-                <label for="c_state_country" class="text-black">Kelurahan<span class="text-danger">*</span></label>
+                <label for="c_state_country" class="text-black">Kecamatan<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="c_state_country" name="c_state_country">
               </div>
               <div class="col-md-6">

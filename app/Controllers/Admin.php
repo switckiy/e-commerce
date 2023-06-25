@@ -331,6 +331,7 @@ class Admin extends BaseController
 
         $data['results'] = $query->getResult();
 
+        $data['allData'] = $query->getRowArray();
         // Load view into a variable
         $html = view('pdf_templates', $data);
 
