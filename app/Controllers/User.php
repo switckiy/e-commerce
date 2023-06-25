@@ -8,8 +8,7 @@ use App\Models\ChartModel;
 use App\Models\CheckoutModel;
 use Dompdf\Dompdf;
 use App\Models\ProfileModel;
-
-
+use App\Models\ShopModel;
 
 class User extends BaseController
 {
@@ -79,6 +78,7 @@ class User extends BaseController
     {
         $user = array(user_id());
         $ChartModel = new ChartModel();
+        $shopModel = new ShopModel();
 
         if ($this->request->getMethod() === 'post') {
             // Validasi input form
@@ -106,15 +106,15 @@ class User extends BaseController
 
                 if ($query['validationChart'] > 0) {
                     $ChartModel->query("UPDATE chart SET quantity =$data[quantity] WHERE product_id=$data[product_id] AND user_id=" . implode(" ", $user));
-
-                    // Di sini Pasang Update Buat Ngubah Quantity aja
                 } else {
                     $ChartModel->insert($data);
-                    # code...
                 }
-                // ======= End ====== \\
 
-                return redirect()->to('home/detile/' . $this->request->getPost('page_id'));
+                // $shopId = $this->request->getPost('page_id');
+                // $quantity = $this->request->getPost('quantity');
+                // $shopModel->query("UPDATE shop SET quantity = quantity - $quantity WHERE id = $shopId");
+
+                return redirect()->to('home/shop');
             } else {
                 // Tampilkan pesan error validasi
                 return 'Validation error: ' . implode('<br>', $this->validator->getErrors());
@@ -146,19 +146,26 @@ class User extends BaseController
 
     public function chekout()
     {
-        $db      = \Config\Database::connect();
+        $db = \Config\Database::connect();
         $builder = $db->table('data_chart');
 
-        $ChartModel = new ChartModel();
-        $CheckoutModel = new CheckoutModel();
-        $user = array(user_id());
-        $data = $ChartModel->where('user_id', $user)->select('user_id,name_product,images,quantity,price,total')->findAll();
+        $chartModel = new ChartModel();
+        $checkoutModel = new CheckoutModel();
+        $user = user_id();
+        $data = $chartModel->where('user_id', $user)->select(' name_product, images, quantity, price, total')->findAll();
         $result = $builder->insertBatch($data);
-        var_dump($data);
 
 
-        $ChartModel->query("DELETE FROM chart WHERE user_id=" . implode(" ", $user));
-        // $ChartModel->query("UPDATE chart SET stats ='not active' WHERE user_id=". implode(" ",$user)); 
+        foreach ($data as $item) {
+            if (isset($item['product_id'])) {
+                $shopModel = new ShopModel();
+                $shopId = $item['product_id'];
+                $quantity = $item['quantity'];
+                $shopModel->query("UPDATE shop SET quantity = quantity - $quantity WHERE id = $shopId");
+            }
+        }
+
+        $chartModel->where('user_id', $user)->delete();
 
         if ($this->request->getMethod() === 'post') {
             // Validasi input form
@@ -182,15 +189,17 @@ class User extends BaseController
                     'telp' => $this->request->getPost('c_phone'),
                     'catatan' => $this->request->getPost('c_order_notes'),
                     'order_total' => $this->request->getPost('total'),
+                    'name' => $this->request->getPost('name')
                 ];
-                $CheckoutModel->insert($data);
+                $checkoutModel->insert($data);
                 return redirect()->to('/thankyou');
             } else {
                 // Tampilkan pesan error validasi
-                return 'Validation error: ' . implode('<br>', $this->validator->getErrors());
+                return redirect()->to('/chart');
             }
         }
     }
+
 
     public function history()
     {

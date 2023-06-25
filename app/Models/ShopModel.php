@@ -13,9 +13,13 @@ class ShopModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['name', 'quantity', 'price', 'images', 'deskripsi'];
+    protected $allowedFields    = ['name', 'quantity', 'price', 'images', 'deskripsi', 'diskon'];
 
 
+    public function getRevenueData()
+    {
+        return $this->findAll();
+    }
 
     // // Dates
     // protected $useTimestamps = false;
@@ -41,4 +45,3 @@ class ShopModel extends Model
     // protected $beforeDelete   = [];
     // protected $afterDelete    = [];
 }
-

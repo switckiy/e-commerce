@@ -9,7 +9,6 @@
         <div class="col-lg-10">
             <form action="<?= site_url('admin/about') ?>" method="post" enctype="multipart/form-data">
                 <div class="form-group row">
-                    <div class="col-sm-2">Images</div>
                     <div class="col-sm-10">
                         <div class="row">
                             <div class="col-sm-3">

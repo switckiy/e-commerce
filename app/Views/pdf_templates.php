@@ -1,13 +1,15 @@
-    <!DOCTYPE html>
-    <html>
+<!DOCTYPE html>
+<html>
 
-    <head>
-        <title>PDF Template</title>
-
-    </head>
+<head>
+    <title>Nota Pembayaran</title>
     <style>
         body {
-            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
         }
 
         table {
@@ -18,54 +20,84 @@
         th,
         td {
             padding: 8px;
-            text-align: left;
             border-bottom: 1px solid #ddd;
         }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .header-info {
+            text-align: right;
+            display: flex;
+            /* Added */
+            justify-content: flex-end;
+            /* Added */
+        }
+
+        .header-info p {
+            margin: 1;
+        }
+
+        .header-info p:first-child {
+            margin-right: 130px;
+            /* Added */
+        }
+
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
+</head>
 
-    <body>
-        <div class="container">
-            <h1>Bon</h1>
-
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th style="width: 40%;">Produk</th>
-                        <th style="width: 30%;">Harga</th>
-                        <th style="width: 20%;">Quantity</th>
-                        <th style="width: 30%;">Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($results as $row) : ?>
-                        <tr>
-                            <td><?= $row->name_product; ?></td>
-                            <td><?= $row->quantity; ?></td>
-                            <td>Rp <?= $row->price; ?></td>
-                            <td>Rp <?= $row->total; ?></td>
-                        </tr>
-                    <?php endforeach; ?>
-                    <tr>
-                        <td colspan="3" style="text-align: right;"><strong>Total:</strong></td>
-                        <td><strong>Rp <?= $row->order_total; ?></strong></td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="1" style="text-align: right;"><strong>Karyawan :</strong></td>
-                        <td><strong><?= $row->karyawan; ?></strong></td>
-
-                        <td colspan="1" style="text-align: right;"><strong>Status :</strong></td>
-                        <td><strong><?= $row->stats; ?></strong></td>
-                    </tr>
-                </tbody>
-
-
-
-            </table>
+<body>
+    <div class="header">
+        <p><strong>Nota Pembayaran</strong></p>
+        <div class="header-info">
+            <?php foreach ($results as $row) : ?>
+                <p><strong>Nama:</strong> <?= $row->name; ?></p>
+                <p><strong>Tanggal:</strong> <?= $row->date; ?></p>
+            <?php endforeach; ?>
         </div>
-    </body>
+    </div>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Produk</th>
+                <th>Harga</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($results as $row) : ?>
+                <tr>
+                    <td><?= $row->name_product; ?></td>
+                    <td><?= $row->quantity; ?></td>
+                    <td>Rp <?= $row->price; ?></td>
+                    <td>Rp <?= $row->total; ?></td>
+                </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <?php foreach ($results as $row) : ?>
+        <p><strong>Total Pembayaran: </strong> Rp <?= $row->order_total; ?></p>
+        <p><strong>Status: </strong><?= $row->stats; ?></p>
+        <p><strong>Status: </strong><?= $row->karyawan; ?></p>
 
+        <div class="footer">
+            <p>Alamat: <?= $row->catatan; ?></p>
+        </div>
+    <?php endforeach; ?>
+</body>
 
-    </body>
-
-    </html>
+</html>

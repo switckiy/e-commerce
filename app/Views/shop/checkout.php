@@ -8,46 +8,44 @@
           <h2 class="h3 mb-3 text-black">Billing Details</h2>
           <div class="p-3 p-lg-5 border">
             <div class="form-group">
-              <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
+              <label for="c_country" class="text-black">Provinsi<span class="text-danger">*</span></label>
               <select id="c_country" name="c_country" class="form-control">
-                <option value="">Select a country</option>
-                <option value="bangladesh">bangladesh</option>
-                <option value="Algeria">Algeria</option>
-                <option value="Afghanistan">Afghanistan</option>
-                <option value="Ghana">Ghana</option>
-                <option value="Albania">Albania</option>
-                <option value="Bahrain">Bahrain</option>
-                <option value="Colombia">Colombia</option>
-                <option value="Dominican">Dominican Republic</option>
+                <option value="jawa barat">Jawa Barat</option>
+
               </select>
             </div>
             <div class="form-group row">
               <div class="col-md-12">
-                <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                <label for="c_address" class="text-black">Kota <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Street address">
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col-md-6">
-                <label for="c_state_country" class="text-black">State / Country <span class="text-danger">*</span></label>
+                <label for="c_state_country" class="text-black">Kelurahan<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="c_state_country" name="c_state_country">
               </div>
               <div class="col-md-6">
-                <label for="c_postal_zip" class="text-black">Posta / Zip <span class="text-danger">*</span></label>
+                <label for="c_postal_zip" class="text-black">Kelurahan<span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
               </div>
             </div>
 
             <div class="form-group row mb-5">
               <div class="col-md-6">
-                <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                <label for="name" class="text-black">Nama Lengkap <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Youre Name">
+              </div>
+
+              <div class="col-md-6">
+                <label for="c_phone" class="text-black">Nomor Telepon <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="Phone Number">
               </div>
             </div>
 
             <div class="form-group">
-              <label for="c_order_notes" class="text-black">Order Notes</label>
+              <label for="c_order_notes" class="text-black">Alamat Lengkap</label>
               <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
             </div>
 

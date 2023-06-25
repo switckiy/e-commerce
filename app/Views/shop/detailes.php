@@ -12,7 +12,7 @@
                 <h2 class="text-black"><?= $productName ?></h2>
                 <p><?= $productDescription ?></p>
                 <?php if (in_groups('member')) : ?>
-                    <p><strong class="text-primary h4">Rp<?= number_format($productPrice - 2.500, 3, '.', ',') ?></strong></p>
+                    <p><strong class="text-primary h4">Rp<?= number_format($productPrice - $diskon, 3, '.', ',') ?></strong></p>
                 <?php else : ?>
                     <p><strong class="text-primary h4">Rp<?= $productPrice; ?></strong></p>
                 <?php endif; ?>

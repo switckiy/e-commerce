@@ -67,7 +67,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="stats">Ongkos Kirim</label>
-                                                <input type="text" class="form-control" id="ongkos" name="ongkos" placeholder="<?= $dats->ongkos; ?>" oninput="formatDecimal(this)" required>
+                                                <input type="text" class="form-control" id="ongkos" name="ongkos" value="<?= $dats->ongkos; ?>" placeholder="<?= $dats->ongkos; ?>" oninput="formatDecimal(this)" required>
                                             </div>
                                             <button type="submit" class="btn btn-primary">Update</button>
                                         </form>

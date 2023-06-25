@@ -38,7 +38,7 @@
                                     <div class="block-4-text p-4">
                                         <h6><a href="<?= base_url('home/detile/' . $product['id']) ?>" class="text-dark"><?= limitNameLength($product['name'], 25); ?></a></h6>
                                         <?php if (in_groups('member')) : ?>
-                                            <p class="text-dark font-weight-bold">Rp<?= number_format($product['price'] - 2.500, 3, '.', ',')  ?></p>
+                                            <p class="text-dark font-weight-bold">Rp<?= number_format($product['price'] - $product['diskon'], 3, '.', ',')  ?></p>
                                         <?php else : ?>
                                             <p class="text-dark font-weight-bold">Rp<?= $product['price']; ?></p>
                                         <?php endif; ?>

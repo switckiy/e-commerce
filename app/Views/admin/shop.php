@@ -81,6 +81,9 @@
                     <div class="form-group">
                         <input type="text" class="form-control" id="deskripsi" name="deskripsi" placeholder="Item deskripsi">
                     </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="diskon" name="diskon" placeholder="Item diskon Kusu Memeber" oninput="formatDecimal(this)" required>
+                    </div>
 
 
                 </div>
@@ -93,6 +96,50 @@
     </div>
 </div>
 <!-- End New Modal -->
+
+
+
+<!-- Edit Modal -->
+<?php foreach ($shops as $esm) : ?>
+    <div class="modal fade" id="eeditSubMenuModal<?= $esm['id'] ?>" tabindex="-1" role="dialog" aria-labelledby="eeditSubMenuModal<?= $esm['id'] ?>Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="eeditSubMenuModal<?= $esm['id'] ?>Label">Add New Sub Menu</h5>
+                    <buttond type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </buttond>
+                </div>
+                <form action="<?= base_url('admin/editItem/' . $esm['id']); ?>" method="post" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" value="<?= $esm['name']; ?>" placeholder="Item name">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="quantity" name="quantity" value="<?= $esm['quantity']; ?>" placeholder="Item Quantity">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="price" name="price" placeholder="Item Price" value="<?= $esm['price']; ?>" oninput="formatDecimal(this)" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="deskripsi" name="deskripsi" value="<?= $esm['deskripsi']; ?>" placeholder="Item deskripsi">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="diskon" name="diskon" placeholder="Item diskon Kusu Memeber" value="<?= $esm['diskon']; ?>" oninput="formatDecimal(this)" required>
+                        </div>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+
 
 <script>
     // Get the file input element
@@ -132,6 +179,7 @@
         height: 150px;
     }
 </style>
+
 
 
 <?= $this->endSection(); ?>

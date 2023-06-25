@@ -24,11 +24,23 @@
                         <tr>
                             <th scope="row"><?= $i++; ?></th>
                             <td><?= $user['name']; ?></td>
+                            <?php $jumlahPoin = false; ?>
                             <?php foreach ($datas as $users) : ?>
-                                <td>Jumlah Poin : <?= $users->jumlah; ?></td>
+                                <?php if ($users->karyawan == $user['name']) : ?>
+                                    <td>Jumlah Poin: <?= $users->jumlah; ?></td>
+                                    <?php $jumlahPoin = true; ?>
+                                <?php endif; ?>
                             <?php endforeach; ?>
+                            <?php if (!$jumlahPoin) : ?>
+                                <td>Jumlah Poin: -</td>
+                            <?php endif; ?>
                             <td>
-                                <a href="<?= base_url('Karyawans/deleteKaryawan/' . $user['id']) ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin untuk menghapus <?= $user['name'] ?> ?')"><i class="far fa-fw fa-trash-alt"></i></a>
+                                <a href="<?= base_url('Karyawans/deleteKaryawan/' . $user['id']) ?>" class="btn btn-danger" onclick="return confirm('Apakah anda yakin untuk menghapus <?= $user['name'] ?> ?')">
+                                    <i class="far fa-fw fa-trash-alt"></i>
+                                </a>
+                                <a href="<?= base_url('Karyawans/generatePDF/' . $user['id']) ?>" class="btn btn-info">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -36,6 +48,8 @@
             </table>
         </div>
     </div>
+
+
 
 </div>
 

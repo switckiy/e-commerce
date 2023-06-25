@@ -25,6 +25,9 @@ class Admin extends BaseController
         // $users = new \Myth\Auth\Models\UserModel();
         // $data['users'] = $users->findAll();
 
+        $revenueModel = new ShopModel();
+        $data['productData'] = $revenueModel->getRevenueData();
+
 
 
         $this->builder->select('users.id as userid, username, email, name');
@@ -180,6 +183,7 @@ class Admin extends BaseController
                         'quantity' => $this->request->getPost('quantity'),
                         'price' => $this->request->getPost('price'),
                         'deskripsi' => $this->request->getPost('deskripsi'),
+                        'diskon' => $this->request->getPost('diskon'),
                         'images' => $newName
                     ];
 
@@ -374,5 +378,50 @@ class Admin extends BaseController
         ]);
 
         return redirect()->to(base_url('admin/status'))->with('success', 'Data berhasil diperbarui');
+    }
+
+
+    public function editItem($id)
+    {
+        // Cek apakah request merupakan POST
+        if ($this->request->getMethod() === 'post') {
+            // Inisialisasi objek validasi
+            $validation = \Config\Services::validation();
+
+            // Validasi form
+            $validation->setRules([
+                'name' => 'required',
+                'quantity' => 'required|numeric',
+                'price' => 'required|numeric',
+                'deskripsi' => 'required',
+                'diskon' => 'required|numeric'
+            ]);
+
+            if ($validation->withRequest($this->request)->run()) {
+                // Mendapatkan data dari form
+                $name = $this->request->getPost('name');
+                $quantity = $this->request->getPost('quantity');
+                $price = $this->request->getPost('price');
+                $deskripsi = $this->request->getPost('deskripsi');
+                $diskon = $this->request->getPost('diskon');
+
+                // Update data di database
+                $shopModel = new ShopModel();
+                $shopModel->update($id, [
+                    'name' => $name,
+                    'quantity' => $quantity,
+                    'price' => $price,
+                    'deskripsi' => $deskripsi,
+                    'diskon' => $diskon
+                ]);
+
+                // Redirect atau tampilkan pesan sukses
+                return redirect()->to(base_url('admin'))->with('success', 'Item updated successfully');
+            } else {
+                // Validasi gagal, tampilkan pesan error
+                $errors = $validation->getErrors();
+                return redirect()->back()->withInput()->with('errors', $errors);
+            }
+        }
     }
 }

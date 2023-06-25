@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\ShopModel;
 use App\Models\ChartModel;
+use App\Models\DiskonModel;
 use Config\Services;
 use Config\Custom;
 
@@ -49,6 +50,7 @@ class Home extends BaseController
     }
     public function detile($id)
     {
+
         // Create an instance of the product model
         $productModel = new ShopModel();
 
@@ -63,7 +65,8 @@ class Home extends BaseController
                 'productName' => $productData['name'],
                 'productDescription' => $productData['deskripsi'],
                 'productPrice' => $productData['price'],
-                'page_id' => $id
+                'page_id' => $id,
+                'diskon' => $productData['diskon']
             ];
             // Load the view and pass the data
             return view('shop/detailes', $data);
